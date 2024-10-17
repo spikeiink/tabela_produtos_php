@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$nome', '$preco', '$quantidade', '$descricao', '$categoria_id')";
 
     if (mysqli_query($conn, $sql)) {
-        header("Location: ../index.php"); // Redireciona de volta à página principal
+        header("Location: ../index.php"); 
     } else {
         echo "Erro ao cadastrar: " . mysqli_error($conn);
     }
