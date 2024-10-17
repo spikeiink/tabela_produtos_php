@@ -26,25 +26,25 @@ function buscarProdutos() {
 }
 
 function excluirProduto(id) {
-    // Verifica se o ID foi fornecido
+    
     if (!id) {
         alert('ID do produto não fornecido.');
         return;
     }
 
-    // Confirmação antes de excluir
+    
     if (confirm('Você tem certeza que deseja excluir este produto?')) {
         fetch('php/excluir_produto.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
             },
-            body: 'id=' + encodeURIComponent(id) // Passa o ID para o PHP
+            body: 'id=' + encodeURIComponent(id) 
         })
         .then(response => {
             if (response.ok) {
                 alert('Produto excluído com sucesso!');
-                buscarProdutos(); // Atualiza a lista de produtos
+                buscarProdutos(); 
             } else {
                 alert('Erro ao excluir o produto.');
             }
