@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #b22222; 
+}
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #ffe6e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d10000; 
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #b22222; 
+    outline: none;
+}
+
+
+button[type="submit"] {
+    background-color: #b22222; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #a00000; 
+}
+
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input#nome_busca {
+    width: calc(100% - 100px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #b22222; 
+    color: white;
+}
+
+tr:hover {
+    background-color: #ffe6e6; 
+}
+
+
+button.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn-warning {
+    background-color: #f39c12; 
+    color: white;
+}
+
+button.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+button.btn-danger {
+    background-color: #e74c3c; 
+    color: white;
+}
+
+button.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input#nome_busca {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+.nav-link {
+    display: inline-block;          
+    padding: 10px 15px;             
+    margin-top: 10px;               
+    background-color: #ff5733;      
+    color: white;                   
+    text-decoration: none;         
+    border-radius: 5px;            
+    transition: background-color 0.3s; 
+}
+
+.nav-link:hover {
+    background-color: #c70039;      
+}
+.categoria-list {
+    list-style-type: none;      
+    padding: 0;                 
+    text-align: center;        
+}
+
+.categoria-list li {
+    margin: 10px 0;           
+}
+
+.categoria-list .nav-link {
+    display: inline-block;      
+    padding: 10px 15px;        
+    background-color: #ff5733; 
+    color: white;              
+    text-decoration: none;      
+    border-radius: 5px;        
+    transition: background-color 0.3s; 
+}
+
+.categoria-list .nav-link:hover {
+    background-color: #c70039; 
+}
+.btn-buscar {
+    display: inline-block;      
+    padding: 10px 15px;        
+    background-color: #b22222; 
+    color: white;              
+    text-decoration: none;     
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;          
+    transition: background-color 0.3s; 
+}
+
+.btn-buscar:hover {
+    background-color: #a00000; 
+}
